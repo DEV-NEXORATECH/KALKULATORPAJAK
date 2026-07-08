@@ -81,7 +81,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/faq', [FaqController::class, 'index'])->name('faq.index');
 
     Route::resource('reminder', ReminderController::class)->except(['show']);
-    Route::get('/kalender', [ReminderController::class, 'kalender'])->name('kalender');
+    Route::get('/kalender', [ReminderController::class, 'kalender'])->name('reminder.kalender');
     Route::patch('/reminder/{reminder}/done', [ReminderController::class, 'toggleDone'])->name('reminder.toggle');
 
     Route::get('/notifications', [NotificationController::class, 'index'])->name('notifications.index');
