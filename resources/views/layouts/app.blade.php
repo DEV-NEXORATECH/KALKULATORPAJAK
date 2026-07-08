@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'PajakKu') }}</title>
+    <title>{{ config('app.name', 'Kalkulator Pajak') }}</title>
 
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700|poppins:500,600,700,800&display=swap" rel="stylesheet" />
@@ -20,7 +20,7 @@
         {{-- Sidebar --}}
         <aside class="fixed inset-y-0 left-0 z-50 w-64 bg-slate-900 transform transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-auto lg:z-auto" :class="{'translate-x-0': sidebarOpen, '-translate-x-full': !sidebarOpen}">
             <div class="flex items-center justify-between h-16 px-6 border-b border-slate-700">
-                <span class="text-xl font-heading font-bold text-white tracking-tight">Pajak<span class="text-primary-500">Ku</span></span>
+                <img src="{{ asset('kalkuator-pajak.png') }}" alt="Kalkulator Pajak" class="h-10 w-auto rounded-lg bg-white px-2 py-1 object-contain">
                 <button @click="sidebarOpen = false" class="lg:hidden text-slate-400 hover:text-white">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
                 </button>
@@ -91,7 +91,7 @@
 
             <div class="p-4 border-t border-slate-700">
                 <div class="flex items-center gap-3 px-3 py-2 text-xs text-slate-500">
-                    <span>&copy; {{ date('Y') }} PajakKu</span>
+                    <span>&copy; {{ date('Y') }} Kalkulator Pajak</span>
                     <span class="ml-auto">v1.0</span>
                 </div>
             </div>

@@ -106,7 +106,7 @@
                             <div class="flex items-start gap-3">
                                 <svg class="w-6 h-6 text-primary-600 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                                 <div>
-                                    <p class="font-semibold text-primary-700 mb-1">Gunakan Kalkulator PajakKu</p>
+                                    <p class="font-semibold text-primary-700 mb-1">Gunakan Kalkulator Pajak</p>
                                     <p class="text-sm text-primary-600">Hitung PPh 21 Anda dengan mudah menggunakan kalkulator interaktif kami. Masukkan gaji dan status PTKP, dapatkan hasil instan.</p>
                                     <a href="{{ route('kalkulator.pph21') }}" class="inline-flex items-center gap-1 mt-3 text-sm font-medium text-primary-600 hover:text-primary-700">
                                         Hitung PPh 21 Sekarang

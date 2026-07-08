@@ -5,8 +5,9 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {{-- Navbar --}}
                 <nav class="flex items-center justify-between h-16 border-b border-white/10">
-                    <div class="flex items-center gap-2">
-                        <span class="text-2xl font-heading font-bold text-white tracking-tight">Pajak<span class="text-primary-400">Ku</span></span>
+                    <div class="flex items-center">
+                        <img src="{{ asset('kalkuator-pajak.png') }}" alt="Kalkulator Pajak" class="h-11 w-auto rounded-lg bg-white px-3 py-1.5 object-contain shadow-sm">
+                        <span class="sr-only">Kalkulator Pajak</span>
                     </div>
                     <div class="flex items-center gap-4">
                         <a href="{{ route('login') }}" class="text-sm font-medium text-slate-300 hover:text-white transition-colors">Masuk</a>
@@ -257,8 +258,8 @@
         <footer class="bg-slate-900">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div class="flex flex-col md:flex-row items-center justify-between gap-4">
-                    <span class="text-xl font-heading font-bold text-white tracking-tight">Pajak<span class="text-primary-400">Ku</span></span>
-                    <p class="text-sm text-slate-400">&copy; {{ date('Y') }} PajakKu. All rights reserved.</p>
+                    <img src="{{ asset('kalkuator-pajak.png') }}" alt="Kalkulator Pajak" class="h-10 w-auto rounded-lg bg-white px-3 py-1.5 object-contain">
+                    <p class="text-sm text-slate-400">&copy; {{ date('Y') }} Kalkuator Pajak. All rights reserved.</p>
                 </div>
             </div>
         </footer>
